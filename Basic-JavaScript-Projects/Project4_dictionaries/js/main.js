@@ -1,4 +1,6 @@
 
+
+//dictionary function//
 function a_Dictionary() {
     var Animal = {
         Species: "Dog",
@@ -7,6 +9,6 @@ function a_Dictionary() {
         Age: 5,
         Sound: "Bark!"
     };
-    delete Animal.Sound;
-    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+    delete Animal.Sound;// this will delete 'Sound: "Bark!"' from dictionary//
+    document.getElementById("Dictionary").innerHTML = Animal.Sound; // will say undefined because we deleted what is being called from the dictionary//
 }
