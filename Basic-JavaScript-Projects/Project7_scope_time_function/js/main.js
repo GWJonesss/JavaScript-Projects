@@ -24,7 +24,7 @@ function am_I_Lucky() { //IF STATEMENT ASSIGNMENT//
 
     if (lucky_Number == 7) // if they guess 7 they win!
     document.getElementById("number").innerHTML = lucky_Number + " "+ "is the lucky number, YOU WIN!";
-        else if(lucky_Number > 10 || lucky_Number < 1 )// makes sure their guess is withing the parameters of being between 1-10
+        else if(lucky_Number > 10 || lucky_Number < 1 )// makes sure their guess is withing the parameters of being between 1-10 using OR "||" statement
         document.getElementById("number").innerHTML = "Please guess a number between 1 and 10";
         else
         document.getElementById("number").innerHTML = lucky_Number+ " " + "is not the lucky number";
