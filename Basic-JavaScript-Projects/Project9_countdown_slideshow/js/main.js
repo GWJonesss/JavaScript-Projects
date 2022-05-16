@@ -2,16 +2,16 @@ function countdown() {
     var seconds = document.getElementById("seconds").value;
 
     function tick() {
-        seconds = seconds - 1;
+        seconds = seconds - 1; // take one away from the value entered in the input box that we defined as 'var seconds' above
         timer.innerHTML = seconds;
-        var time = setTimeout (tick, 1000);
-        if (seconds == -1) {
+        var time = setTimeout (tick, 1000); // Timeout uses ( , milliseconds) so "1000" means 1 second 
+        if (seconds == -1) { // stop the count down once it passes 0
             alert("Time's up!");
             clearTimeout(time)
             timer.innerHTML == "";
         }
     }
-    tick();
+    tick(); // call tick function if we call countdown function (with button set up in html)
 }
 
 var slideIndex = 1;
